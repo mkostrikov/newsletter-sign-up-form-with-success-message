@@ -1,0 +1,13 @@
+.main {
+  min-block-size: 100dvh;
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  background-color: var(--charcoal-grey);
+
+  @media (min-width: 1000px) {
+    & {
+      place-items: center;
+    }
+  }
+}

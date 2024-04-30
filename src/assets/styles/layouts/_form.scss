@@ -1,0 +1,63 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  &__wrapper {
+    display: grid;
+    grid-template-areas:
+            "label error"
+            "input input";
+    gap: 0.8rem;
+  }
+
+  &__label {
+    font-family: var(--bold-font), sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--main-color);
+    grid-area: label;
+  }
+
+  &__input {
+    outline: 0.1rem solid var(--grey);
+    border: none;
+    border-radius: 0.8rem;
+    padding-inline-start: 2.4rem;
+    block-size: 5.6rem;
+    display: flex;
+    align-items: center;
+    grid-area: input;
+    color: var(--main-color);
+  }
+
+  &__error {
+    grid-area: error;
+    font-family: var(--bold-font), sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: right;
+    color: var(--error-color);
+  }
+
+  &__input:focus-visible {
+    outline: 0.3rem solid var(--main-color);
+  }
+
+  &__input::placeholder {
+    font-family: var(--regular-font), sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: currentColor;
+    opacity: 0.5;
+  }
+
+  &__input--invalid {
+    outline: 0.3rem solid var(--error-color);
+    background-color: rgba(255, 97, 85, 0.15);
+    color: var(--error-color);
+  }
+}

@@ -1,0 +1,53 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(name="description" content="")
+        title Frontend Mentor | Meet landing page
+        link(rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png")
+        link(rel="stylesheet" href="./assets/styles/main.scss")
+        script(defer src="./assets/js/main.js")
+    body
+        main.main
+            article.subscribe
+                div.subscribe__inner(id="subscribe-inner")
+                    div.subscribe__back.subscribe__rotate
+                        div.subscribe__icon
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FF6A3A"/><stop offset="100%" stop-color="#FF527B"/></linearGradient></defs><g fill="none"><circle cx="32" cy="32" r="32" fill="url(#a)"/><path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"/></g></svg>
+                        div.subscribe__content
+                            section.subscribe__info
+                                h2.h2.subscribe__title Thanks for subscribing!
+                                p.p.subscribe__description A confirmation email has been sent to
+                                    |
+                                    | <strong>ash@loremcompany.com</strong>. Please open it and click the button inside to confirm
+                                    | your subscription
+                            button.button.subscribe__close(id="dismiss-message") Dismiss message
+                    div.subscribe__front
+                        div.subscribe__illustration
+                        div.subscribe__content
+                            section.subscribe__info
+                                h2.h2.subscribe__title Stay updated!
+                                p.p.subscribe__description Join 60,000+ product managers receiving monthly updates on:
+                                ul.list
+                                    li.list__item.p Product discovery and building what matters
+                                    li.list__item
+                                        p.p Measuring to ensure updates are a success
+                                    li.list__item
+                                        p.p And much more!
+                            form.form.subscribe__form(id="subscribe-form" name="subscribe-form" novalidate)
+                                div.form__wrapper
+                                    label.form__label(for="email") Email address
+                                    div.form__error
+                                        span(id="email-validation" aria-live="assertive" class="validation-message")
+                                    input.form__input(
+                                        id="email"
+                                        type="email"
+                                        name="email"
+                                        autocomplete="email"
+                                        placeholder="email@company.com"
+                                        required
+                                        pattern=".+@.+\..+"
+                                        aria-describedby="email-validation"
+                                    )
+                                button.button.form__button Subscribe to monthly newsletter

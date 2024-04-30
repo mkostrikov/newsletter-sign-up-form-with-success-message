@@ -1,0 +1,12 @@
+{
+  "private": "true",
+  "scripts": {
+    "dev": "parcel -p 8080 src/index.pug --open",
+    "build": "rm -rf build && parcel build src/index.pug --dist-dir build/www --public-url ."
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.12.0",
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0"
+  }
+}
