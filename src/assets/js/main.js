@@ -14,7 +14,6 @@ subscribeForm.addEventListener("submit", (e) => {
         document.querySelector("#dismiss-message").addEventListener("click", () => {
             subscribeInner.classList.remove("subscribe__rotate");
         }, {once: true});
-        emailInput.value = "";
     }
 });
 

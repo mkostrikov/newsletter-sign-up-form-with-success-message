@@ -4,6 +4,12 @@
   font-size: 4rem;
   line-height: 1;
   color: var(--main-color);
+
+  @media (min-width: 1000px) {
+    & {
+      font-size: 5.6rem;
+    }
+  }
 }
 
 .p {
@@ -13,4 +19,11 @@
   line-height: 1.5;
   color: var(--main-text-color);
   max-inline-size: 34ch;
+
+  @media (min-width: 1000px) {
+    & {
+      max-inline-size: 40ch;
+    }
+  }
 }
+

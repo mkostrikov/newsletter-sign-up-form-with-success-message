@@ -3,14 +3,15 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
-        meta(name="description" content="")
-        title Frontend Mentor | Meet landing page
+        meta(name="description" content="Newsletter sign-up form with success message")
+        title Newsletter sign-up form with success message
         link(rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png")
         link(rel="stylesheet" href="./assets/styles/main.scss")
         script(defer src="./assets/js/main.js")
     body
         main.main
             article.subscribe
+                h1(class="sr-only") Newsletter sign-up form with success message
                 div.subscribe__inner(id="subscribe-inner")
                     div.subscribe__back.subscribe__rotate
                         div.subscribe__icon
@@ -20,7 +21,7 @@ html(lang="en")
                                 h2.h2.subscribe__title Thanks for subscribing!
                                 p.p.subscribe__description A confirmation email has been sent to
                                     |
-                                    | <strong>ash@loremcompany.com</strong>. Please open it and click the button inside to confirm
+                                    | <b>ash@loremcompany.com</b>. Please open it and click the button inside to confirm
                                     | your subscription
                             button.button.subscribe__close(id="dismiss-message") Dismiss message
                     div.subscribe__front
